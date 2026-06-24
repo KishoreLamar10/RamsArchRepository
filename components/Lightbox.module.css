@@ -1,0 +1,53 @@
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.96);
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.close:hover { opacity: 0.7; }
+
+.wrapper {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+  cursor: grab;
+  user-select: none;
+}
+
+.img:active { cursor: grabbing; }
+
+.hint {
+  position: absolute;
+  bottom: 24px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: #888888;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}

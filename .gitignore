@@ -1,6 +1,18 @@
+# Next.js
+.next/
+out/
+node_modules/
+
+# Portfolio source files (large/unused)
 Portfolio/All pages.psb
 Portfolio/Raamprakash - Portfolio.pdf
 Portfolio/00.jpg
 Portfolio/01.jpg
 Portfolio/02.jpg
+public/Portfolio/All pages.psb
+public/Portfolio/Raamprakash - Portfolio.pdf
+public/Portfolio/00.jpg
+public/Portfolio/01.jpg
+public/Portfolio/02.jpg
+
 .DS_Store

@@ -1,0 +1,36 @@
+.section {
+  padding: calc(70px + 80px) 10vw 80px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #000000;
+}
+
+.intro { margin-bottom: 60px; }
+
+.introTitle {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.0;
+  margin-bottom: 16px;
+}
+
+.introDesc {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #555555;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 48px;
+}
+
+@media (max-width: 768px) {
+  .section { padding: 100px 6vw 60px; }
+  .grid { grid-template-columns: 1fr; gap: 32px; }
+}
